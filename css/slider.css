@@ -1,0 +1,79 @@
+.slider{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slider .slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active{
+    clip-path: circle(150% at 0 51%);
+    transition: 2s;
+}
+
+.slider .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navegacion{
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity 0.5s ease;
+}
+
+.prev__btn, .next__btn{
+    z-index: 2;
+    font-size: 2em;
+    color: #fff;
+    background: rgb(0, 34, 68, 0.7);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navegacion__items{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion__items .slide__icon{
+    z-index: 2;
+    background: rgb(0, 34, 68, 0.7);
+    width: 20px;
+    height: 20px;
+    transform: translateY(-25px);
+    margin: 0 6px;
+    border-radius: 50%;
+}
+
+.navegacion__items .slide__icon.active{
+    background: #fff;
+    transition: 2s;
+}
+
+@media screen and (max-width: 360px) {
+    .slider{
+        height: 200px;
+        min-height: 0px;
+    }
+    .navegacion{
+        height: 200px;
+    }
+    .prev__btn, .next__btn{
+        padding: 5px;
+    }
+    .navegacion__items .slide__icon{
+        width: 10px;
+        height: 10px;
+    }
+}

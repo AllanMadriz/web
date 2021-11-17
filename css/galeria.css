@@ -1,0 +1,68 @@
+/* Contenedor principal */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+    overflow: hidden;
+}
+/* Titulo principal de la pagina */
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+/* Ajustes al titulo */
+.container .heading h3{
+    color: #002244;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #002244;
+}
+/* Contenedor de las todas las imagenes */
+.container .column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Contenedor de las imagenes o columnas de imagenes */
+.container .column .box__img{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+/* Estilos a las imagenes directamente */
+.container .column .box__img img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 45px;
+}
+/* Margenes top de las columnas */
+.container .column .box__img:first-child{
+    margin-top: 15%;
+}
+
+.container .column .box__img:nth-child(3){
+    margin-top: 6%;
+}
+/* Media para cambiar anchos y direcciones de flex */
+@media (max-width: 769px){
+    .container .column{
+        flex-direction: column;
+    }
+    .container .column .box__img{
+        width: 100%;
+    }
+}
+/* Media para eliminar padding y cambiar anchos con textos */
+@media (max-width: 643px){
+    .container .heading{
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .container .heading h3{
+        font-size: 32px;
+    }
+}

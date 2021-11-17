@@ -1,0 +1,145 @@
+/* Estilos del contenedor del navbar */
+.my_nav{
+    position: sticky;
+    top: 0;
+    background: #fff;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 10px 10px -10px black;
+    z-index: 4;
+}
+/* Label que tendra el logo */
+label.logo a{
+    color: #002244;
+    font-size: 35px;
+    line-height: 80px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+/* Estilos de lista */
+.my_nav ul{
+    float: right;
+    margin-right: 20px;
+}
+/* Estilos del componente de lista */
+.my_nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+/* Estilos del anchor */
+.my_nav ul li a{
+    color: #002244;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+/* Estilos hover */
+.my_nav_links li a:hover{
+    border-bottom: 5px solid #002244;
+}
+/* Boton de navbar al responsive */
+.checkbtn{
+    font-size: 30px;
+    color: #002244;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* Input del check */
+#check{
+    display: none;
+}
+/* Media para cambiar unos padding y tamanios de letra */
+@media screen and (max-width: 1025px){
+    label.logo a{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    .my_nav ul li a{
+        font-size: 16px;
+    }
+}
+/* Media para cambiar unos padding y tamanios de letra */
+@media screen and (max-width: 925px){
+    label.logo a{
+        font-size: 26px;
+        padding-left: 30px;
+    }
+    .my_nav ul li a{
+        font-size: 14px;
+    }
+}
+/* Media para cambiar unos padding y tamanios de letra */
+@media screen and (max-width: 858px){
+    label.logo a{
+        font-size: 20px;
+        padding-left: 40px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    /* Cambiamos la forma de los elementos del navbar */
+    .my_nav_links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 2000;
+    }
+    /* Estilos a la lista y los elementos de la misma */
+    .my_nav .my_nav_links li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .my_nav .my_nav_links li a{
+        font-size: 20px;
+    }
+    .my_nav_links li a:hover{
+        background: none;
+    }
+    /* Si esta marcado el input se mueve el nav */
+    #check:checked ~ .my_nav_links{
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 320px){
+    label.logo a{
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+.loader{
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loader > div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid #002244;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1.2s infinite linear;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Etiquetas meta y links de CSS -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vidrios Aluminios Madriz, brindandole los mejores servicios en cuanto a material de vidrio se refiere!"
+    />
+    <link
+      rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="icon" href="./resources/images/logo.png"/>
+    <script src="./JS/index.js" async defer></script>
+    <!-- <script src="./JS/carga.js" async defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Vidrios Madriz</title>
+  </head>
+
+  <body>
+    <!-- <div class="loader">
+      <div></div>
+    </div> -->
+
+    <!-- Componente del navbar -->
+    <nav class="my_nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><a href="index.html">Vidrios Madriz</a></label>
+      <ul class="my_nav_links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./html/catalogo.html">Catálogo</a></li>
+        <li><a href="./html/galeria.html">Galería</a></li>
+        <li><a href="./html/quienesSomos.html">Conócenos</a></li>
+        <li><a href="./html/contactenos.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenedor main de la pagina -->
+    <div class="main__container">
+
+      <!-- Seccion del welcome -->
+      <div class="welcome">
+        <h1>Vidrios y Aluminios Madriz</h1>
+        <h2 class="th1">Somos <span class="th2"></span></h2>
+        <video class="video-bg" autoplay muted loop>
+          <source src="./resources/videos/video_inicio.mp4" type="video/mp4" />
+        </video>
+        <a href="./html/catalogo.html">ver productos</a>
+        <a href="#" id="btn__scroll1">Deslizar<i class="fas fa-angle-double-down "></i></a>  
+      </div>
+
+      <!-- Diferentes seccion informativas -->
+      <div class="introduction">
+        <h2>Vidrio y Aluminio</h2>
+        <p>
+          Nos enfocamos en ofrecerle la mejor calidad en cuanto a productos en base de vidrio y aluminio,
+           teniendo siempre en cuenta su necesidad como cliente y el querer darle el mejor servicio siempre. 
+           Brindándole productos desde hermosas ventanas hasta variedad en escaleras, vallas, 
+           ¡puertas y demás que artículos que pueden ser moldeados a su gusto! 
+        </p>
+
+        <p>¡¡Por esto y mucho más somos Vidrios Aluminios Madriz!! </p>
+        <a href="#" id="btn__scroll2">Deslizar<i class="fas fa-angle-double-down "></i></a>
+      </div>
+
+      <!-- La clase blue le invierte los colores -->
+      <div id="s2" class="introduction blue">
+          <h2>Servicios</h2>
+          <p>
+            Sabemos que su casa es un elemento muy importante de su vida y
+            nosotros podemos ayudarle con eso, Vidrios y Aluminios Madriz ofrece
+            instalaciones y reparaciones del material que necesite, enfocándonos en
+            satisfacer sus necesidades, llevándole hasta la puerta de su casa los
+            mejores materiales en cuanto a vidrios y aluminio se refiere.
+          </p>
+          <p>
+            ¡Para una cotización contáctenos y sin ningún coste alguno por ello!
+          </p>
+
+          <a href="./html/contactenos.html">escríbenos</a>
+          <a href="#" id="btn__scroll3">Deslizar<i class="fas fa-angle-double-down "></i></a>
+      </div>
+
+      <div class="introduction">
+        <h2>¿Por qué nosotros?</h2>
+        <ul class="introduction__list">
+          <li>
+            Enfocados en darle el mejor precio en base a sus necesidades y
+            gustos
+          </li>
+          <li>
+            Gran comunicación, tratando siempre con claridad todo tanto entre
+            clientes como empresa
+          </li>
+          <li>
+            Garantía en cuanto a productos de alta calidad, obtenidos de los
+            mejores distribuidores
+          </li>
+        </ul>
+
+        <p>¡¡Por esto y mucho más somos Vidrios y Aluminios Madriz!!</p>
+      </div>
+
+      <!-- Boton flotante de wsp -->
+      <div class="btn-wsp">
+        <a
+          href="https://api.whatsapp.com/send?phone=+506%2087200889"
+          target="_blank"
+        >
+          <img src="./resources/images/whatsIcon.png" alt="" />
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Componente del footer -->
+    <footer>
+      <div class="olas">
+        <div class="ola" id="ola1"></div>
+        <div class="ola" id="ola2"></div>
+        <div class="ola" id="ola3"></div>
+        <div class="ola" id="ola4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="./html/catalogo.html">Catálogo</a></li>
+        <li><a href="./html/galeria.html">Galería</a></li>
+        <li><a href="./html/quienesSomos.html">Conócenos</a></li>
+        <li><a href="./html/contactenos.html">Contáctenos</a></li>        
+      </ul>
+      <p>©2021 Vidrios Madriz | Todos los Derechos Reservados</p>
+    </footer>
+  </body>
+</html>

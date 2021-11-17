@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Links y scripts necesarios -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/gracias.css">
+    <link rel="icon" href="../resources/images/logo.png"/>
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <!-- <script src="../JS/carga.js" async defer></script> -->
+    <script src="../JS/video.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Item de carga -->
+    <!-- <div class="loader">
+        <div></div>
+    </div> -->
+        <!-- Componente del navbar -->
+        <nav class="my_nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"><a href="index.html">Vidrios Madriz</a></label>
+            <ul class="my_nav_links">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../html/catalogo.html">Catálogo</a></li>
+              <li><a href="../html/galeria.html">Galería</a></li>
+              <li><a href="../html/quienesSomos.html">Conócenos</a></li>
+              <li><a href="../html/contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+        <!-- Seccion que almacena lo princpal de la pagina y los videos -->
+        <div class="texto__thx">
+            <h1>Gracias por Contactarnos!!</h1>
+            <p>Lo atenderemos lo antes posible</p>
+            <a href="../index.html">Volver a Inicio</a>
+            <div class="section__videos">
+
+                <div class="my__video">
+                    <p>Conozca Acabado Akari</p>
+                    <video class="video-js fm-video vjs-16-9 vjs-big-play-centered" controls id="fm-video">
+                        <source src="../resources/videos/Akari.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="my__video">
+                    <p>Conozca Acabado Extralum</p>
+                    <video class="video-js fm-video vjs-16-9 vjs-big-play-centered" controls id="fm-video2">
+                        <source src="../resources/videos/Europa.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Componente del footer -->
+        <footer>
+            <div class="olas">
+              <div class="ola" id="ola1"></div>
+              <div class="ola" id="ola2"></div>
+              <div class="ola" id="ola3"></div>
+              <div class="ola" id="ola4"></div>
+            </div>
+            <ul class="social_icon">
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+              <li><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <ul class="menu">
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="./catalogo.html">Catálogo</a></li>
+              <li><a href="./galeria.html">Galería</a></li>
+              <li><a href="./quienesSomos.html">Conócenos</a></li>
+              <li><a href="./contactenos.html">Contáctenos</a></li>        
+            </ul>
+            <p>©2021 Vidrios Madriz | Todos los Derechos Reservados</p>
+        </footer>
+</body>
+</html>

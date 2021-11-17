@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Etiquetas Meta y hojas de estilo -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../resources/images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/galeria.css" />
+    <link rel="stylesheet" href="../css/slider.css">
+    <script src="../JS/slider.js" async defer></script>
+    <!-- <script src="../JS/carga.js" async defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Galería | Vidrios Madriz</title>
+  </head>
+
+  <body>
+    <!-- Item de carga de pagina -->
+    <!-- <div class="loader">
+      <div></div>
+    </div> -->
+
+    <!-- Componente del navbar -->
+    <nav class="my_nav">
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><a href="../index.html">Vidrios Madriz</a></label>
+      <ul class="my_nav_links">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./quienesSomos.html">Conócenos</a></li>
+        <li><a href="./contactenos.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Slider, se presentan distintas imagenes que se desplazan una a una -->
+    <div class="slider">
+      <div class="slide active">
+        <img src="https://i.imgur.com/jrI50yt.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://i.imgur.com/dZIX3sK.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://i.imgur.com/b8UPy5Q.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://i.imgur.com/7XlPX3y.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="https://i.imgur.com/7zPljv2.jpg" alt="">
+      </div>
+      <div class="navegacion">
+        <i class="fas fa-chevron-left prev__btn"></i>
+        <i class="fas fa-chevron-right next__btn"></i>
+      </div>
+      <div class="navegacion__items">
+        <div class="slide__icon active"></div>
+        <div class="slide__icon"></div>
+        <div class="slide__icon"></div>
+        <div class="slide__icon"></div>
+        <div class="slide__icon"></div>
+      </div>
+    </div>
+
+    <!-- Contenido principal de la pagina -->
+    <div class="container">
+
+      <!-- Contenedor del titulo -->
+      <div class="heading">
+        <h3>Galería</h3>
+      </div>
+
+      <!-- Contenedor de las columnas de fotos -->
+      <div class="column">
+        <div class="box__img">
+          <img src="https://i.imgur.com/vxegriA.jpg" alt="" />
+          <img src="https://i.imgur.com/sHSemDu.jpg" alt="" />
+          <img src="https://i.imgur.com/Eak9ESU.jpg" alt="" />
+        </div>
+
+        <div class="box__img">
+          <img src="https://i.imgur.com/tNwnKJe.jpg" alt="" />
+          <img src="https://i.imgur.com/TgiSvAG.jpg" alt="" />
+          <img src="https://i.imgur.com/3UfcD1T.jpg" alt="" />
+          <img src="https://i.imgur.com/FHzy1XL.jpg" alt="" />
+        </div>
+
+        <div class="box__img">
+          <img src="https://i.imgur.com/bWUZlWZ.jpg" alt="" />
+          <img src="https://i.imgur.com/d29PVJ9.jpg" alt="" />
+          <img src="https://i.imgur.com/iSbrreK.jpg" alt="" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contenedor del boton de WSP -->
+    <div class="btn-wsp">
+      <a
+        href="https://api.whatsapp.com/send?phone=+506%2087200889"
+        target="_blank"
+      >
+        <img src="../resources/images/whatsIcon.png" alt="" />
+      </a>
+    </div>
+
+    <!-- Componente del footer -->
+    <footer>
+      <div class="olas">
+        <div class="ola" id="ola1"></div>
+        <div class="ola" id="ola2"></div>
+        <div class="ola" id="ola3"></div>
+        <div class="ola" id="ola4"></div>
+      </div>
+      <ul class="social_icon">
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./quienesSomos.html">Conócenos</a></li>
+        <li><a href="./contactenos.html">Contáctenos</a></li>        
+      </ul>
+      <p>©2021 Vidrios Madriz | Todos los Derechos Reservados</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+.container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    margin-top: 5vh;
+}
+/* Texto principal de la pagina */
+.container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+}
+/* Estilos directos al h3 de la seccion heading */
+.container .heading h3{
+    color: #002244;
+    font-size: 48px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #002244;
+}
+
+/* Seccion principal */
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Contenedor principal de cada seccion */
+.main__about{
+    width: 90%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+}
+/* Estilos del img */
+.about .main__about img{
+    height: 50vh;
+    width: auto;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+/* Estilos al contenedor del texto */
+.about__text{
+    width: 50%;
+    margin: 15px;
+}
+/* Estilos del titulo */
+.about__text h1{
+    color: #002244;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+/* Estilos del titulo */
+.about__text h5{
+    color: #002244;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+/* Estilos del texto */
+.about__text p{
+    color: #002244;
+    font-size: 18px;
+    line-height: 32px;
+}
+/* Contenedor principal de todo */
+.section{
+    width: 100%;
+    margin-top: -20vh;
+    min-height: calc(100vh - 80px);
+}
+
+.sharon{
+    text-align: end;
+}
+/* Linea divisoria */
+.line{
+    background-color: #002244;
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    border-radius: 50px;
+}
+/* Media para cambiar flex y tamanio de letras */
+@media screen and (max-width: 925px){
+    .main__about{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about__text h1{
+        font-size: 56px;
+        margin-bottom: 10px;
+    }
+    .about__text h5{
+        margin-bottom: 10px;
+    }
+}
+/* Cambio de letras */
+@media screen and (max-width: 765px){
+    .about__text, .about .main__about img{
+        width: 100%;
+    }
+    .about__text h1{
+        font-size: 32px;
+    }
+    .about__text h5{
+        font-size: 20px;
+    }
+    .about__text p{
+        font-size: 16px;
+    }
+    .section{
+        margin-top: -10vh;
+    }
+}
+
+@media screen and (max-width: 412px){
+    .about{
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .container .heading h3{
+        font-size: 32px;
+    }
+}

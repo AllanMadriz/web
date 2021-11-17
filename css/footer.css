@@ -1,0 +1,111 @@
+/* Footer de las paginas */
+footer{
+    position: relative;
+    width: 100%;
+    background: #002244;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+/* Iconos y menu */
+footer .social_icon, footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+/* Anchors de las redes sociales */
+footer .social_icon li a{
+    font-size: 32px;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+/* Opcion del hover en el anchor */
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+    background: none;
+}
+/* Estilos para el anchor del menu */
+footer .menu li a{
+    font-size: 20px;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.5;
+}
+/* Opcion del hover en el menu */
+footer .menu li a:hover{
+    opacity: 1;
+}
+/* Estilos del texto */
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+/* Clase ola, contendra una imagen */
+footer .ola{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../resources/images/waves3.png);
+    background-size: 1000px 100px;
+}
+/* Id de ola, se le coloca prioridad de index y una transicion */
+footer .ola#ola1{
+    z-index: 2;
+    opacity: 1;
+    bottom: 0;
+    animation: olasFooter 4s linear infinite;
+}
+
+footer .ola#ola2{
+    z-index: 1;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: olasFooter2 4s linear infinite;
+}
+
+footer .ola#ola3{
+    z-index: 2;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: olasFooter 3s linear infinite;
+}
+
+footer .ola#ola4{
+    z-index: 1;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: olasFooter2 3s linear infinite;
+}
+/* Se crea un key frame para mover las olas */
+@keyframes olasFooter{
+    0%{
+        background-position: 1000px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+/* Key frame para mover las segundas olas */
+@keyframes olasFooter2{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}

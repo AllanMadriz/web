@@ -1,0 +1,158 @@
+/* Contenedor principal */
+.container{
+  width: 80%;
+  margin: 50px auto;
+  min-height: calc(100vh - 150px);
+  color: #002244;
+}
+
+/* Titulo de la pagina */
+.container .heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* Estilos al h3 */
+.container .heading h3{
+  color: #002244;
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #002244;
+}
+
+/* Contenedor principal del formulario */
+.contact__box{
+  display: flex;
+  border: 1px solid #002244;
+}
+
+/* Caja izquierda que contendra el formulario */
+.contact__izq{
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+
+/* Caja derecha con otras opciones de contacto */
+.contact__derec{
+  flex-basis: 40%;
+  padding: 25px;
+  background: #002244;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container p{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Contenedor de las filas */
+.input__row{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input__row .input__group{
+  flex-basis: 45%;
+}
+
+/* Estilos al input */
+input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  padding-bottom: 5px;
+}
+
+/* Estilos al text area */
+textarea{
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #333;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos a la etiqueta */
+.input__group label{
+  margin-bottom: 6px;
+  display: block;
+  color: #002244;
+}
+
+/* Estilos al boton */
+button{
+  background: #002244;
+  font-size: 16px;
+  color: #fff;
+  width: 100px;
+  border: none;
+  height: 35px;
+  cursor: pointer; 
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.contact__izq h3{
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #002244;
+}
+
+tr td:first-child{
+  padding-right: 20px;
+}
+
+tr td, th{
+  padding-top: 20px;
+  text-align: center;
+}
+
+th .fas{
+  margin-left: 15px;
+}
+
+th{
+  font-weight: lighter;
+  border-bottom: 1px solid #fff;
+}
+
+#lblError{
+  color: #002244;
+}
+
+/* Se cambia la direccion del flex */
+@media (max-width: 858px){
+  .contact__box{
+    flex-direction: column;
+  }
+}
+
+/* Se cambian unos px de medida y la direccion de un flex */
+@media (max-width: 600px){
+  .input__row{
+    flex-direction: column;
+  }
+  .input__group label{
+    padding-top: 15px;
+  }
+  .container .heading h3{
+    font-size: 1.2em;
+  }
+  
+}
+
