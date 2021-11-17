@@ -37,9 +37,16 @@
 .my__video{
     width: 40%;
     padding: 15px;
+    height: auto;
 }
 
-@media screen and (max-width: 660px) {
+.my__video iframe{
+    width: 100%;
+    min-height: 300px;
+}
+
+
+@media screen and (max-width: 730px) {
     .my__video{
         width: 80%;
     }
