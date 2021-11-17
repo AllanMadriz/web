@@ -25,7 +25,6 @@ nextBtn.addEventListener('click', () => {
 
     slides[slideNumero].classList.add('active');
     slideIcons[slideNumero].classList.add('active');
-
 })
 
 // Igual a la funcion del boton siguiente pero en lugar de sumar resta
