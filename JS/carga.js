@@ -1,4 +1,9 @@
 // Ejecuta cuando el documento ha sido cargado
-// $(window).on('load', function(){
-//     $('.loader').fadeOut(1000);
-// });
+window.onload = function () {
+  let loader = document.querySelector(".loader__container");
+  setTimeout(() => {
+    loader.classList.add("hide");
+    loader.style.display = "none";
+    document.querySelector("body").style.overflow = "initial";
+  }, 500);
+};

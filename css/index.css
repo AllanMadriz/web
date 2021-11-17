@@ -12,6 +12,7 @@
 body{
     min-height: calc(100vh - 80px);
     background: #fff;
+    overflow: hidden;
 }
 /* Zona principal del Index */
 .welcome{
